@@ -25,7 +25,7 @@
     </header>
     <div class="notice"><span aria-hidden="true">✦</span><div><strong>基本スコアの高い順</strong>に掲載し、同スコア内はカード番号の昇順です。パラレル・再録もカード番号ごとに掲載しています。効果欄は公式データの表記を保持しています。</div></div>
     <section class="controls" aria-label="絞り込み">
-      <div class="control-row"><input id="search" class="search" type="search" placeholder="カード名・カード番号・収録商品で検索" aria-label="カード名、カード番号または収録商品で検索"><select id="product-filter" class="sort-select" aria-label="収録商品で絞り込み"><option value="all">全商品</option></select><label class="sort-wrap" for="sort-order">並び順<select id="sort-order" class="sort-select"><option value="desc">スコア：高い順</option><option value="asc">スコア：低い順</option></select></label><button type="button" class="all-filter active">すべて <span>84</span></button><button type="button" class="score-filter" data-score="8">スコア 8<span>3</span></button>
+      <div class="control-row"><input id="search" class="search" type="search" placeholder="カード名・カード番号・収録商品で検索" aria-label="カード名、カード番号または収録商品で検索"><select id="product-filter" class="sort-select" aria-label="収録商品で絞り込み"><option value="all">全商品</option></select><label class="sort-wrap" for="sort-order">並び順<select id="sort-order" class="sort-select"><option value="asc">スコア：低い順</option><option value="desc">スコア：高い順</option></select></label><button type="button" class="all-filter active">すべて <span>84</span></button><button type="button" class="score-filter" data-score="8">スコア 8<span>3</span></button>
 <button type="button" class="score-filter" data-score="7">スコア 7<span>3</span></button>
 <button type="button" class="score-filter" data-score="6">スコア 6<span>12</span></button>
 <button type="button" class="score-filter" data-score="5">スコア 5<span>8</span></button>
@@ -809,6 +809,7 @@
     search.addEventListener('input',apply);
     productFilter.addEventListener('change',apply);
     sortOrder.addEventListener('change',apply);
+    apply();
   </script>
 </body>
 </html>
